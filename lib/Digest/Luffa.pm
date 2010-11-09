@@ -150,6 +150,7 @@ Returns the algorithm used by the object.
 L<Digest>
 
 L<http://www.sdl.hitachi.co.jp/crypto/luffa/>
+
 L<http://en.wikimedia.org/wikipedia/en/wiki/SHA-3>
 
 L<http://www.saphir2.com/sphlib/>
