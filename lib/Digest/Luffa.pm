@@ -75,8 +75,8 @@ Digest::Luffa - Perl interface to the Luffa digest algorithm
     use Digest::Luffa qw(luffa_256 luffa_256_hex luffa_256_base64);
 
     $digest = luffa_256($data);
-    $digest = luffa_hex_256($data);
-    $digest = luffa_base64_256($data);
+    $digest = luffa_256_hex($data);
+    $digest = luffa_256_base64($data);
 
     # Object-oriented interface
     use Digest::Luffa;
