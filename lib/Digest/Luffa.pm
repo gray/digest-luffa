@@ -25,33 +25,6 @@ our @EXPORT_OK = qw(
     luffa_512 luffa_512_hex luffa_512_base64
 );
 
-# TODO: convert to C.
-sub luffa_224_hex  { unpack 'H*', luffa_224(@_) }
-sub luffa_256_hex  { unpack 'H*', luffa_256(@_) }
-sub luffa_384_hex  { unpack 'H*', luffa_384(@_) }
-sub luffa_512_hex  { unpack 'H*', luffa_512(@_) }
-
-sub luffa_224_base64 {
-    my $b64 = MIME::Base64::encode(luffa_224(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub luffa_256_base64 {
-    my $b64 = MIME::Base64::encode(luffa_256(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub luffa_384_base64 {
-    my $b64 = MIME::Base64::encode(luffa_384(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub luffa_512_base64 {
-    my $b64 = MIME::Base64::encode(luffa_512(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-
 sub add_bits {
     my ($self, $data, $bits) = @_;
     if (2 == @_) {
