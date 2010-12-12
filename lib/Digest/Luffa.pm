@@ -64,7 +64,8 @@ Digest::Luffa - Perl interface to the Luffa digest algorithm
 =head1 DESCRIPTION
 
 The C<Digest::Luffa> module provides an interface to the Luffa message
-digest algorithm. Luffa is a candidate in the NIST SHA-3 competition.
+digest algorithm. Luffa was a candidate in the NIST SHA-3 competition but
+did progress beyond round 2.
 
 This interface follows the conventions set forth by the C<Digest> module.
 
